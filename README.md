@@ -16,11 +16,11 @@ The following scripts were used for analysis of phosphoproteomic datasets to ide
 
 | Script                                                                                 | Description                                                                                                                  | Input file                                                                                         |
 | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------|
-| DEP2-script-CN-Yak1-phospho-control-analysis-PCA-plot-with-labels.R                    | Generates PCA plots for the calcineurin, yak1 mutant phosphoproteomics dataset.                                              | 10514_SupplementalData_H99_081524-normalized-WT-cna1-yak1-renamed-dup-split.csv                    |
-| DEP2-script-CN-Yak1-phospho-manual-groups-analysis.R                                   | Performs analysis of the phosphoproteomics dataset using manually defined experimental groups.                               | 10514_SupplementalData_H99_081524-normalized-WT-cna1-yak1-renamed-dup-split.csv                    |
-| DEP2-script-CN-Yak1-phospho-manual-groups-analysis-heatmap-TurboID-protein-specific.R  | Generates protein-specific phosphoproteomic heatmaps combined with the TurboID analysis.                                     | 10514_SupplementalData_H99_081524-normalized-WT-cna1-yak1-renamed-dup-split.csv                    |
-| DEP2-script-CN-truncations_phospho-control-analysis-UpSet-plot.R                       | Generates UpSet plots to visualize overlap among phosphoproteomic datasets from truncation experiments at the protein level. | 10514_SupplementalData_H99_081524-normalized-all-dataset-except-Cnb1-renamed-row-dup-col-split.csv |
-| DEP2-script-CN-truncations_phospho-control-analysis-downregulated_Suburst_UpSet-plot.R | Generates SunBurst plots for analysis of hyperphosphorylated or hypophosphorylated proteins at the peptide level.            | 10514_SupplementalData_H99_081524-normalized-all-dataset-except-Cnb1-renamed-row-dup-col-split.csv |
+| DEP2-script-CN-Yak1-phospho-control-analysis-PCA-plot-with-labels.R                    | Generates PCA plots for the calcineurin, yak1 mutant phosphoproteomics dataset.                                              | 10514_SupplementalData_H99_081524-normalized-all-dataset_scripts.csv                    |
+| DEP2-script-CN-Yak1-phospho-manual-groups-analysis.R                                   | Performs analysis of the phosphoproteomics dataset using manually defined experimental groups.                               | 10514_SupplementalData_H99_081524-normalized-all-dataset_scripts.csv                    |
+| DEP2-script-CN-Yak1-phospho-manual-groups-analysis-heatmap-TurboID-protein-specific.R  | Generates protein-specific phosphoproteomic heatmaps combined with the TurboID analysis.                                     | 10514_SupplementalData_H99_081524-normalized-all-dataset_scripts.csv                    |
+| DEP2-script-CN-truncations_phospho-control-analysis-UpSet-plot.R                       | Generates UpSet plots to visualize overlap among phosphoproteomic datasets from truncation experiments at the protein level. | 10514_SupplementalData_H99_081524-normalized-all-dataset_scripts.csv |
+| DEP2-script-CN-truncations_phospho-control-analysis-downregulated_Suburst_UpSet-plot.R | Generates SunBurst plots for analysis of hyperphosphorylated or hypophosphorylated proteins at the peptide level.            | 10514_SupplementalData_H99_081524-normalized-all-dataset_scripts.csv |
 
 ### TurboID Proximity Labeling
 
@@ -38,7 +38,6 @@ The following scripts were used for the analysis of the Ribo-seq and RNA-seq dat
 
 | Script                     | Description                                                        | Input files                                               |
 | -------------------------- | ------------------------------------------------------------------ |-----------------------------------------------------------|
-| Ribo-seq_RFP_analysis.R    | Analyzes ribosome footprinting (RFP) length from the bam files.    | All bam files are in the "Data/Ribo-seq/bam_files" folder |
 | deltaTE_script.R           | Calculates and analyzes changes in translational efficiency (ΔTE). | All files are in the "Data/Ribo-seq" folder               |
 | deltaTE_script_PCA_plots.R | Generates PCA plots for translational-efficiency datasets.         | All files are in the "Data/Ribo-seq" folder               |
 
@@ -60,7 +59,7 @@ The analyses were performed in **R** using packages including:
 * `deltaTE`
 * Additional packages as specified within individual scripts
 
-Because package requirements may differ between analyses, users should inspect the beginning of each script for the complete list of required packages.
+Because package requirements may differ between analyses, users should inspect each script for the complete list of required packages.
 
 ---
 
